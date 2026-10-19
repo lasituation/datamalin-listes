@@ -1,0 +1,10 @@
+# Pisteurs : SDK d'analyse et d'attribution des apps. Canal direct seulement (D19).
+# Une entrée par ligne : domaine  # source: d'où vient l'entrée (observation datée, documentation).
+google-analytics.com  # source: liste de test du prototype du bouclier, 19/10/2026
+app-measurement.com  # source: liste de test du prototype du bouclier, 19/10/2026
+appsflyer.com  # source: liste de test du prototype du bouclier, 19/10/2026
+appsflyersdk.com  # source: liste de test du prototype du bouclier, 19/10/2026
+adjust.com  # source: liste de test du prototype du bouclier, 19/10/2026
+adjust.io  # source: liste de test du prototype du bouclier, 19/10/2026
+kochava.com  # source: liste de test du prototype du bouclier, 19/10/2026
+singular.net  # source: liste de test du prototype du bouclier, 19/10/2026

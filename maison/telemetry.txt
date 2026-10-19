@@ -1,0 +1,6 @@
+# Télémétrie et rapports de plantage. Les deux canaux ; une entrée reprise de HaGeZi le dit dans sa source.
+# Une entrée par ligne : domaine  # source: …
+crashlytics.com  # source: liste de test du prototype du bouclier, 19/10/2026
+firebase-settings.crashlytics.com  # source: liste de test du prototype du bouclier, 19/10/2026
+sentry.io  # source: liste de test du prototype du bouclier, 19/10/2026
+bugsnag.com  # source: liste de test du prototype du bouclier, 19/10/2026

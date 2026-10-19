@@ -1,0 +1,2 @@
+# cloud_sync : seulement des domaines observés sur nos téléphones (journal du bouclier), jamais de mémoire.
+# Une entrée par ligne : domaine  # source: observé sur <téléphone> le <date>

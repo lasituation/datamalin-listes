@@ -1,0 +1,5 @@
+# Liste blanche : ces domaines et leurs sous-domaines ne sont jamais bloqués.
+# Une entrée par ligne : domaine  # source: …
+mtn.cm  # source: site officiel de MTN Cameroon
+orange.cm  # source: site officiel d'Orange Cameroun
+camtel.cm  # source: site officiel de Camtel

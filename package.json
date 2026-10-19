@@ -1,0 +1,22 @@
+{
+  "name": "@datamalin/listes",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "description": "Construction des listes de blocage du bouclier DataMalin (HaGeZi + listes maison)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "embarquee": "esbuild src/cli-embarquee.ts --bundle --platform=node --format=esm --outfile=dist/embarquee.mjs --log-level=warning && node dist/embarquee.mjs maison ../../content/apps-essentielles.json ../../apps/mobile/src/features/bouclier/liste-embarquee.json",
+    "listes": "esbuild src/cli-listes.ts --bundle --platform=node --format=esm --target=node22 --outfile=dist/listes.mjs --log-level=warning && node dist/listes.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
