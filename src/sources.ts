@@ -37,7 +37,8 @@ export function lireMaison(texte: string, fichier: string): EntreeMaison[] {
     if (!source) throw new Error(`${fichier}:${i + 1} : source manquante`);
     const domaine = normaliserDomaine(partieDomaine);
     if (!domaine) throw new Error(`${fichier}:${i + 1} : domaine invalide « ${partieDomaine.trim()} »`);
-    entrees.push({ domaine, source, deHagezi: /hagezi/i.test(source) });
+    // Reprise de HaGeZi : la source le déclare en premier (« HaGeZi … ») ; un lien vers un ticket de leur dépôt ne compte pas.
+    entrees.push({ domaine, source, deHagezi: /^hagezi\b/i.test(source) });
   });
   return entrees;
 }

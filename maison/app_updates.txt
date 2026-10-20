@@ -1,2 +1,11 @@
-# app_updates : seulement des domaines observés sur nos téléphones (journal du bouclier), jamais de mémoire.
-# Une entrée par ligne : domaine  # source: observé sur <téléphone> le <date>
+# app_updates : téléchargement des apps par les boutiques. Bloque aussi les installations depuis ces boutiques en
+# données mobiles (le DNS ne distingue pas une mise à jour d'une installation ; la pause du bouclier le permet).
+# Domaines retenus : source documentée et domaine qui répond (dig, 20/10/2026) ; à confirmer dans le journal du bouclier.
+# Exclus car partagés avec Chrome et les services Google : play.googleapis.com, *.gvt1.com, dl.google.com,
+# android.apis.google.com ; Galaxy Store (navigation) : *-odc.samsungapps.com ; Xiaomi GetApps : global.market.xiaomi.com.
+# Une entrée par ligne : domaine  # source: …
+aka-dn.gw.samsungapps.com  # source: Galaxy Store CDN, https://subdomainfinder.c99.nl/scans/2025-01-17/samsungapps.com (20/10/2026)
+ak-dn.gw.samsungapps.com  # source: Galaxy Store CDN, https://subdomainfinder.c99.nl/scans/2025-01-17/samsungapps.com (20/10/2026)
+cflare-dn.gw.samsungapps.com  # source: Galaxy Store CDN, https://subdomainfinder.c99.nl/scans/2025-01-17/samsungapps.com (20/10/2026)
+cf-dn.gw.samsungapps.com  # source: Galaxy Store CDN, https://docs.samsungknox.com/admin/knox-platform-for-enterprise/kbas/kba-115012547907/ (20/10/2026)
+vas.samsungapps.com  # source: mises à jour des apps Samsung, https://www.scss.tcd.ie/doug.leith/pubs/additional_material_neversleepingears.pdf (20/10/2026)

@@ -53,4 +53,9 @@ describe('lireMaison', () => {
     const [entree] = lireMaison('metric.account-samsung.com # source: HaGeZi Samsung Tracker, revu le 20/10/2026\n', 'telemetry.txt');
     expect(entree?.deHagezi).toBe(true);
   });
+
+  it('ne marque pas une entrée maison qui cite seulement un ticket du dépôt HaGeZi comme preuve', () => {
+    const [entree] = lireMaison('dlmgr.gtm.svcmot.com  # source: Motorola OTA, https://github.com/hagezi/dns-blocklists/issues/9856\n', 'os_updates.txt');
+    expect(entree?.deHagezi).toBe(false);
+  });
 });

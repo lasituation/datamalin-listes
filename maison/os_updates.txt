@@ -1,2 +1,24 @@
-# os_updates : seulement des domaines observés sur nos téléphones (journal du bouclier), jamais de mémoire.
-# Une entrée par ligne : domaine  # source: observé sur <téléphone> le <date>
+# os_updates : téléchargement (et vérification) des mises à jour du système. Catégorie désactivée par défaut dans
+# l'app (correctifs de sécurité : choix d'Arkev, 20/10/2026, D30). Domaines retenus : source documentée et domaine
+# qui répond (dig, 20/10/2026), sans usage partagé connu ; à confirmer dans le journal du bouclier sur nos téléphones.
+# Exclus car partagés (notifications, compte Google) : android.googleapis.com, android.clients.google.com.
+# Une entrée par ligne : domaine  # source: …
+fota-cloud-dn.ospserver.net  # source: Samsung FOTA, https://github.com/ysfchn/SamFetch/blob/main/RESOURCES.md (20/10/2026)
+fota-secure-dn.ospserver.net  # source: Samsung FOTA, https://github.com/ysfchn/SamFetch/blob/main/RESOURCES.md (20/10/2026)
+fota-ll-dn.ospserver.net  # source: Samsung FOTA, https://www.netify.ai/resources/domains/ospserver.net (20/10/2026)
+dms.ospserver.net  # source: Samsung FUMO, https://discourse.pi-hole.net/t/samsung-galaxy-wont-update/74704 (20/10/2026)
+www.ospserver.net  # source: Samsung FUMO, https://www.scss.tcd.ie/doug.leith/pubs/additional_material_neversleepingears.pdf (20/10/2026)
+fota-apis.samsungdm.com  # source: Samsung FOTA, https://www.scss.tcd.ie/doug.leith/pubs/additional_material_neversleepingears.pdf (20/10/2026)
+update.intl.miui.com  # source: Xiaomi OTA, https://github.com/unknownFalleN/xiaomi-dns-blocklist (20/10/2026)
+update.miui.com  # source: Xiaomi OTA, https://github.com/unknownFalleN/xiaomi-dns-blocklist (20/10/2026)
+bigota.d.miui.com  # source: Xiaomi OTA, https://en.xiaomi-miui.gr/hyperos-stable-dev-roms/ (20/10/2026)
+ultimateota.d.miui.com  # source: Xiaomi OTA, https://gsmchina.com/?p=5590 (20/10/2026)
+superota.d.miui.com  # source: Xiaomi OTA, https://gsmchina.com/?p=5590 (20/10/2026)
+bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com  # source: Xiaomi OTA, https://en.xiaomi-miui.gr/hyperos-stable-dev-roms/ (20/10/2026)
+ota.googlezip.net  # source: Google OTA, https://support.google.com/work/android/answer/10513641 (20/10/2026)
+ota-cache1.googlezip.net  # source: Google OTA, https://support.google.com/work/android/answer/10513641 (20/10/2026)
+ota-cache2.googlezip.net  # source: Google OTA, https://support.google.com/work/android/answer/10513641 (20/10/2026)
+ota-cache3.googlezip.net  # source: Google OTA, https://support.google.com/work/android/answer/10513641 (20/10/2026)
+moto-cds.appspot.com  # source: Motorola OTA, https://github.com/FixeQD/motorola-update (20/10/2026)
+dlmgr.gtm.svcmot.com  # source: Motorola OTA, https://github.com/hagezi/dns-blocklists/issues/9856 (20/10/2026)
+dlmgredg-vz.gtm.svcmot.com  # source: Motorola OTA, https://github.com/hagezi/dns-blocklists/issues/9856 (20/10/2026)

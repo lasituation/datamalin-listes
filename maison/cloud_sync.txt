@@ -1,2 +1,8 @@
-# cloud_sync : seulement des domaines observés sur nos téléphones (journal du bouclier), jamais de mémoire.
-# Une entrée par ligne : domaine  # source: observé sur <téléphone> le <date>
+# cloud_sync : envoi en arrière-plan des photos et sauvegardes vers le nuage. Seulement les domaines d'envoi : l'affichage
+# des photos et des fichiers reste possible. Domaines retenus : source documentée et domaine qui répond (dig, 20/10/2026) ;
+# à confirmer dans le journal du bouclier.
+# Exclus : photosdata-pa.googleapis.com (affichage et synchronisation de Google Photos), www.googleapis.com et
+# content.googleapis.com (Drive et bien d'autres), *.samsungcloud.com hors observation (liens Quick Share possibles).
+# Une entrée par ligne : domaine  # source: …
+photos.googleapis.com  # source: envoi Google Photos, https://github.com/xob0t/gpmc (20/10/2026)
+appbackupapi.micloud.xiaomi.net  # source: sauvegarde des apps Xiaomi, https://www.netify.ai/resources/domains/xiaomi.net (20/10/2026)
